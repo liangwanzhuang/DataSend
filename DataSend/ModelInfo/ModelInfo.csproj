@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28B0FF25-82D1-4AD7-B262-35089DF4B320}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModelInfo</RootNamespace>
+    <AssemblyName>ModelInfo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="QKDecryptLib">
+      <HintPath>..\web\Bin\QKDecryptLib.dll</HintPath>
+    </Reference>
+    <Reference Include="QKEncryptLib">
+      <HintPath>..\web\Bin\QKEncryptLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access_token.cs" />
+    <Compile Include="AdjustModel.cs" />
+    <Compile Include="AuthorityHandler.cs" />
+    <Compile Include="AuthorityInfo.cs" />
+    <Compile Include="BaseInfo.cs" />
+    <Compile Include="Bubbleinfo.cs" />
+    <Compile Include="Code128.cs" />
+    <Compile Include="C_pda_image.cs" />
+    <Compile Include="DataTableToJson.cs" />
+    <Compile Include="DrugAdminModel.cs" />
+    <Compile Include="EntrustNumberModel.cs" />
+    <Compile Include="ClearingpartyHandler.cs" />
+    <Compile Include="ClearingpartyModel.cs" />
+    <Compile Include="DeliveryHandler.cs" />
+    <Compile Include="DeliveryInfo.cs" />
+    <Compile Include="DeliveryModel.cs" />
+    <Compile Include="DrugGlobalHandle.cs" />
+    <Compile Include="DrugGlobalInfoGet.cs" />
+    <Compile Include="DrugMatchingInfo.cs" />
+    <Compile Include="DrugMatchingModel.cs" />
+    <Compile Include="DrugModel.cs" />
+    <Compile Include="EmployeeModel.cs" />
+    <Compile Include="LossiModel.cs" />
+    <Compile Include="meRoomModel.cs" />
+    <Compile Include="PackingHandler.cs" />
+    <Compile Include="PackingInfo.cs" />
+    <Compile Include="PackingModel.cs" />
+    <Compile Include="prescriptionSubsidiary.cs" />
+    <Compile Include="prescriptionSubsidiaryModel.cs" />
+    <Compile Include="Properties\ClearingpartyInfo.cs" />
+    <Compile Include="EmployeeHandler.cs" />
+    <Compile Include="EmployeeInfo.cs" />
+    <Compile Include="RecheckedModel.cs" />
+    <Compile Include="RecipeModel.cs" />
+    <Compile Include="HospitalModel.cs" />
+    <Compile Include="DrugInfo.cs" />
+    <Compile Include="EnterDrug.cs" />
+    <Compile Include="EnterRecipe.cs" />
+    <Compile Include="HospitalHandler.cs" />
+    <Compile Include="HospitalInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeInfo.cs" />
+    <Compile Include="RecipientModel.cs" />
+    <Compile Include="ReviewAddInfo.cs" />
+    <Compile Include="Room_MonitorModel.cs" />
+    <Compile Include="ScreenWarn.cs" />
+    <Compile Include="ScreenWarnModel.cs" />
+    <Compile Include="Specialdrug.cs" />
+    <Compile Include="Statistics.cs" />
+    <Compile Include="StorageManageModel.cs" />
+    <Compile Include="TeModel.cs" />
+    <Compile Include="TisaneDstInfo.cs" />
+    <Compile Include="TisaneInfo.cs" />
+    <Compile Include="TisaneModel.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="WarehouseInvenModel.cs" />
+    <Compile Include="WarehousepharmacyModel.cs" />
+    <Compile Include="WorkrecordQuInfo.cs" />
+    <Compile Include="YpcDrugModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SQLDAL\SQLDAL.csproj">
+      <Project>{06CBC443-0619-4D6C-845E-71A5C19C7018}</Project>
+      <Name>SQLDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ModelInfo.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ModelInfo.dll" />
+    <Content Include="bin\Debug\ModelInfo.pdb" />
+    <Content Include="bin\Debug\QKDecryptLib.dll" />
+    <Content Include="bin\Debug\QKEncryptLib.dll" />
+    <Content Include="bin\Debug\SQLDAL.dll" />
+    <Content Include="bin\Debug\SQLDAL.pdb" />
+    <Content Include="obj\Debug\ModelInfo.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ModelInfo.dll" />
+    <Content Include="obj\Debug\ModelInfo.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
